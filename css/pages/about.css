@@ -10,11 +10,11 @@ html, body {
 }
 
 body {
-  background: #282828;
   text-align: justify;
 }
 
 section#about {
+  background-image: linear-gradient(125deg,#08405c,#012e45);
   padding: 0 70px 0 70px;
 }
 
@@ -121,18 +121,17 @@ p {
 .button {
   color: #fff;
   background-color: #00a6ff;
-  border-color: #00a6ff;
+  border: 0;
   border-radius: 5px;
   font-size: 16px;
   font-weight: bolder;
-  padding: 10px 20px;
+  padding: 15px 20px;
   text-transform: uppercase;
 }
 
 .button:hover {
   color: #fff;
   background-color: #008ad4;
-  border-color: #008ad4;
   cursor: pointer;
 }
 

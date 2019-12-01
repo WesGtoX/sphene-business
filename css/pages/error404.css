@@ -23,8 +23,6 @@ a {
 #error404 {
   text-align: center;
   height: calc(100vh - 92px - 59px);
-
-
   background-image: linear-gradient(125deg,#08405c,#0070a8);
   background-position: center;
   background-repeat: no-repeat;

@@ -1,8 +1,8 @@
-<!-- <p align="center">
+<p align="center">
    <a href="https://github.com/WesGtoX/sphene-business">
-     <img src="#" alt="Sphene Business" title="Sphene Business" width="500px">
+     <img src="/images/sphene_logo" alt="Sphene Business" title="Sphene Business" width="300px">
    </a>
-</p> -->
+</p>
 <p align="center">
     <a href="https://app.netlify.com/sites/sphene/deploys" alt="Netlify Status">
         <img src="https://api.netlify.com/api/v1/badges/a9bb3571-bdd8-4c74-84e1-1de974f8b836/deploy-status" />
