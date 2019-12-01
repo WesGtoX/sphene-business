@@ -1,0 +1,141 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+  color: #fff;
+}
+
+h2 {
+  margin-top: 20px;
+  padding: 40px 0 0 0;
+}
+
+#pricing {
+  /* max-height: 80%; */
+  height: calc(100vh - 59px);
+  background-image: linear-gradient(125deg,#08405c,#012e45);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.container-pricing {
+  /* max-width: 80%; */
+  width: 80%;
+  margin-bottom: 20px;
+  padding: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.pricing-table {
+  width: 100%;
+  max-width: 400px;
+  background: #f1f1f1;
+  flex: 1;
+  margin: 10px;
+  text-transform: uppercase;
+}
+
+.pricing-header {
+  color: #fff;
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.price {
+  font-size: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 0;
+}
+
+.price span {
+  font-size: 30px;
+}
+
+.title {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%,50%);
+  width: 80%;
+  max-width: 360px;
+  text-align: center;
+  padding: 8px 0;
+  font-size: 14px;
+}
+
+.pricing-list {
+  padding: 10px 20px;
+}
+
+.value {
+  color: #344;
+}
+
+.pricing-list li {
+  margin: 8px 0;
+  font-size: 14px;
+  color: #344;
+  text-align: center;
+}
+
+.border {
+  width: 80px;
+  height: 1px;
+  background: #ddd;
+  margin: auto;
+}
+
+.pricing-table a {
+  display: block;
+  width: 80%;
+  margin: auto;
+  margin-bottom: 20px;
+  text-align: center;
+  padding: 8px 0;
+  font-size: 14px;
+  border: 1px solid;
+  max-width: 360px;
+  transition: .2s linear;
+}
+
+.pricing-table a:hover {
+  border-radius: 30px;
+}
+
+.table1 .pricing-header, 
+.table2 .pricing-header, 
+.table3 .pricing-header {
+  background: #0070a8;
+}
+
+.table1 .title,
+.table2 .title,
+.table3 .title {
+  background-image: linear-gradient(125deg,#0070a8,#012e45);
+}
+
+.table1 a, 
+.table2 a, 
+.table3 a {
+  color: #012e45;
+}
+
+.table1 a:hover, 
+.table2 a:hover, 
+.table3 a:hover {
+  background: #012e45;
+  color: #fff;
+}
+
+@media screen and (max-width:780px)  {
+  .pricing-table {
+    flex: 100%;
+  }
+}
