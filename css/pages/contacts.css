@@ -84,3 +84,19 @@ textarea.contact-form-text {
   text-align: right;
   padding: 0 0 20px 0;
 }
+
+::-webkit-input-placeholder {
+  color: #59c5ff6c;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+  color: #59c5ff6c;
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+  color: #59c5ff6c;
+}
+
+:-ms-input-placeholder {  
+  color: #59c5ff6c;
+}
