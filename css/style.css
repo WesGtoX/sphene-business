@@ -1,1 +1,304 @@
-/* css file */
+@import url('https://fonts.googleapis.com/css?family=Fira+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Pacifico&display=swap');
+
+/* ========== GENERAL ========== */
+* {
+    font-family: 'Fira Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+body {
+    background-color: #222;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+h2:after {
+    content: "";
+    display: block;
+    margin: 0 auto;
+    padding-top: 10px;
+    border-bottom: 4px solid #00a6ff;
+    width: 90px;
+}
+
+p {
+    font-size: 16px;
+    font-family: 'Fira Sans', sans-serif;
+    line-height: 1.5;
+}
+
+a {
+    outline: none;
+    color: #fff;
+}
+
+/* #home, #services, #testimonials, #contacts {
+    padding: 60px 0 60px;
+} */
+
+/* ========== MAIN MENU ========== */
+.main-menu {
+    position: fixed;
+    top: 0;
+    z-index: 10;
+    background: transparent;
+    width: 100%;
+    line-height: 80px;
+}
+
+.main-menu.not-home {
+    position: relative;
+}
+
+ul.main-nav {
+    list-style: none;
+    margin: 0;
+}
+
+.main-nav {
+    display: flex;
+    margin-right: 36px;
+}
+
+.main-nav li:first-child {
+    margin-right: auto;
+}
+
+.main-nav li {
+    margin-left: 36px;
+    padding: 5px 0 5px;
+}
+
+.last-link {
+  margin-right: 36px;
+}
+
+.main-nav a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.main-nav .logo {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    font-family: 'Pacifico', cursive;
+    font-weight: normal;
+    text-transform: none !important;
+}
+
+.main-nav .logo:hover {
+    color: #fff;
+}
+
+.main-nav a:active, 
+.main-nav a:hover,
+.mobile-nav a:hover {
+    color: #59c5ff;
+}
+
+a.active-link {
+    color: #59c5ff;
+}
+
+.scroll {
+    position: fixed;
+    top: 0;
+    z-index: 10;
+    background: #000;
+    opacity: 0.8;
+    width: 100%;
+    line-height: 60px;
+}
+
+/* ========== MOBILE MENU ========== */
+@media screen and (min-width: 992px) {
+    .mobile-menu {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .main-menu {
+        display: none;
+    }
+
+    .mobile-menu .logo {
+        font-family: 'Pacifico', cursive;
+    }
+
+    .mobile-menu .icon-and-logo {
+        display: flex;
+    }
+
+    .mobile-menu li {
+        list-style: none;
+        color: #fff;
+        text-decoration: none;
+        font-size: 16px;
+        font-family: 'Fira Sans', sans-serif;
+        font-weight: 700;
+        text-transform: uppercase;
+    }
+
+    .mobile-menu {
+		top: 0;
+		position: fixed;
+		width: 100%;
+        background: #000;
+        opacity: 0.8;
+		z-index: 22;
+		font-weight: bold;
+    }
+
+    .mobile-menu ul li {
+        text-align: center;
+        margin: 10px 0 15px;
+    }
+
+    .icon-and-logo ol {
+        margin-bottom: 0;
+    }
+    
+    /* ========== BURGUER MENU ========== */
+    .menu-icon {
+        margin: 10px 0 10px;
+        margin-left: auto;
+        padding-top: 5px
+    }
+    .bar1, .bar2, .bar3 {
+        width: 25px;
+        height: 3px;
+        background: #fff;
+        margin: 4px 0;
+        transition: 0.4s;
+    }
+
+    .change .bar1 {
+        -webkit-transform: rotate(-45deg) translate(-5px, 5px);
+        transform: rotate(-45deg) translate(-5px, 5px);
+    }
+
+    .change .bar2 {
+        opacity: 0;
+    }
+
+    .change .bar3 {
+        -webkit-transform: rotate(45deg) translate(-5px, -5px);
+        transform: rotate(45deg) translate(-5px, -5px);
+    }
+
+    .mobile-nav {
+        display: none;
+    }
+
+    .mobile-nav.active {
+        display: block;
+    }
+}
+
+/* ========== FOOTER ========== */
+footer {
+    color: #fff;
+}
+
+footer .footer-wrapper .col {
+    text-align: left;
+    line-height: 1.2;
+    padding: 0 20px 0;
+}
+
+footer .footer-wrapper .col a {
+    color: #fff;
+    text-decoration: none;
+}
+
+footer .footer-wrapper ul a {
+    -webkit-touch-callour: text;
+    -webkit-user-select: text;
+    -khtml-user-select: text;
+    -moz-user-select: text;
+    -ms-user-select: text;
+    user-select: text;
+}
+
+footer .footer-wrapper li.hover-color i {
+    color: #00a6ff;
+}
+
+footer .social-wrapper a {
+    color: #fff;
+    padding: 6px;
+}
+
+footer .social-wrapper a:hover {
+    color: #00a6ff;
+}
+
+footer .text-footer {
+    text-align: justify;
+}
+
+footer .top {
+    text-align: right;
+    padding: 0% 2% 2% 0%;
+}
+
+footer .top a:hover {
+    color: #00a6ff;
+}
+
+/* ========== FOOTER COPYRIGHT ========== */
+footer .sub-footer {
+    background-color: #222;
+    padding: 20px 0 20px;
+    text-align: center;
+}
+
+footer .sub-footer .container a {
+    text-decoration: none;
+}
+
+footer .sub-footer .container a:hover {
+    color: #9e9e9e;
+}
+
+/* ========== SCROLLBAR ========== */
+::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+    -webkit-border-radius: 16px;
+  }
+  
+  ::-webkit-scrollbar-track-piece {
+    background-color: #ffffff;
+    -webkit-border-radius: 0px;
+  }
+  
+  ::-webkit-scrollbar-thumb:vertical {
+    height: 5px;
+    background-color: #666;
+    -webkit-border-radius: 50px;
+  }
+  
+  ::-webkit-scrollbar-thumb:horizontal {
+    width: 5px;
+    background-color: #666;
+    -webkit-border-radius: 50px;
+  }
