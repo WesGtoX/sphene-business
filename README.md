@@ -1,6 +1,6 @@
 <p align="center">
    <a href="https://github.com/WesGtoX/sphene-business">
-     <img src="images/sphene_logo" alt="Sphene Business" title="Sphene Business" width="300px">
+     <img src="images/sphene_logo.png" alt="Sphene Business" title="Sphene Business" width="300px">
    </a>
 </p>
 <p align="center">
