@@ -1,13 +1,34 @@
-// Portfolio Items
-const portfolioItems = document.querySelectorAll('.portfolio-item-wrapper')
+function validateContactForm() {
+	let name = contact.name.value
+	let email = contact.email.value
+	let phone = contact.phone.value
+	let message = contact.message.value
 
-portfolioItems.forEach(portfolioItem => {
-	portfolioItem.addEventListener('mouseover', () => {
-		console.log(portfolioItem.childNodes[1].classList)
-		portfolioItem.childNodes[1].classList.add('image-blur')
-	})
-	portfolioItem.addEventListener('mouseout', () => {
-		console.log(portfolioItem.childNodes[1].classList)
-		portfolioItem.childNodes[1].classList.remove('image-blur')
-	})
-})
+	if (name === "") {
+		alert("Preencha o campo Nome!")
+		contact.name.focus()
+		return false
+	}
+
+	if (email === "") {
+		alert("Preencha o campo E-mail!")
+		contact.email.focus()
+		return false
+	} else if (email.indexOf("@") == -1) {
+		alert("Preencha o campo E-mail CORRETAMENTE!")
+		contact.email.focus()
+		return false
+	}
+
+	if (phone === "") {
+		alert("Preencha o campo Telefone!")
+		contact.phone.focus()
+		return false
+	}
+
+	if (message === "") {
+		alert("Preencha o campo Mensagem!")
+		contact.message.focus()
+		return false
+	}
+}

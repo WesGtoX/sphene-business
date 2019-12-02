@@ -19,7 +19,7 @@
 }
 
 .textbox {
-  width: 100%;
+  width: 300px;
   overflow: hidden;
   font-size: 20px;
   padding: 8px 0;
@@ -45,7 +45,7 @@
 }
 
 .button {
-  width: 100%;
+  width: 300px;
   border: 0;
   border-radius: 5px;
   background-color: #00a6ff;

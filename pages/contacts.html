@@ -81,15 +81,20 @@
         <div class="container">
             <h2>Contate-nos</h2>
             <form class="contact-form" action="/pages/success.html" name="contact" method="POST" data-netlify="true">
-                <input type="text" class="contact-form-text" name="name" placeholder="Nome completo">
-                <input type="email" class="contact-form-text" name="email" placeholder="email@email.com.br">
-                <input type="text" class="contact-form-text" name="phone" placeholder="16 99999 9999">
-                <textarea class="contact-form-text" name="message" placeholder="Escreva a sua mensagem..."></textarea>
+                <input type="text" class="contact-form-text" name="name" required placeholder="Nome completo">
+                
+                <input type="email" class="contact-form-text" name="email" required placeholder="email@email.com.br">
+                
+                <input type="text" class="contact-form-text" name="phone" required placeholder="16 99999 9999">
+                
+                <textarea class="contact-form-text" name="message" required placeholder="Escreva a sua mensagem..."></textarea>
+                
                 <div class="recaptcha">
                     <!-- netlify form submit captch -->
                     <div data-netlify-recaptcha="true"></div>
                 </div>
-                <input type="submit" class="contact-form-btn" value="Enviar">
+                
+                <input type="submit" class="contact-form-btn" onclick="validateContactForm()" value="Enviar">
             </form>
         </div>
     </section>
@@ -104,9 +109,7 @@
         </div>
     </footer>
     
-    <!-- Slider js -->
-    <script src="js/main.js"></script>
-    <!-- Style js -->
-    <script src="js/slider.js"></script>
+    <!-- Main js -->
+    <script src="/js/main.js"></script>
 </body>
 </html>

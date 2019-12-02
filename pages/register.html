@@ -83,43 +83,44 @@
         <div class="container">
             <div class="register-box">
                 <h2>Criar conta</h2>
-
-                <div class="textbox">
-                    <i class="fas fa-user"></i>
-                    <input type="text" name="name" placeholder="Nome">
-                </div>
-
-                <div class="textbox">
-                    <i class="fas fa-user"></i>
-                    <input type="text" name="lastname" placeholder="Sobrenome">
-                </div>
-                
-                <div class="textbox">
-                    <i class="fas fa-envelope"></i>
-                    <input type="email" name="email" placeholder="email@email.com.br">
-                </div>
-                
-                <div class="textbox">
-                    <i class="fas fa-lock"></i>
-                    <input type="password" name="password" placeholder="Senha">
-                </div>
-                
-                <div class="textbox">
-                    <i class="fas fa-lock"></i>
-                    <input type="password" name="password" placeholder="Confirmar senha">
-                </div>
-
-                <div class="textbox">
-                    <i class="fas fa-user"></i>
-                    <input type="text" name="cpf" placeholder="CPF">
-                </div>
-                
-                <div class="textbox">
-                    <i class="fas fa-phone-alt"></i>
-                    <input type="text" name="phone" placeholder="Telefone">
-                </div>
-
-                <input type="button" class="button" value="Salvar">
+                <form name="teste">
+                    <div class="textbox">
+                        <i class="fas fa-user"></i>
+                        <input type="text" name="firstname" required placeholder="Nome">
+                    </div>
+    
+                    <div class="textbox">
+                        <i class="fas fa-user"></i>
+                        <input type="text" name="lastname" required placeholder="Sobrenome">
+                    </div>
+                    
+                    <div class="textbox">
+                        <i class="fas fa-envelope"></i>
+                        <input type="email" name="email" required placeholder="email@email.com.br">
+                    </div>
+                    
+                    <div class="textbox">
+                        <i class="fas fa-lock"></i>
+                        <input type="password" name="password" required placeholder="Senha">
+                    </div>
+                    
+                    <div class="textbox">
+                        <i class="fas fa-lock"></i>
+                        <input type="password" name="cofirmPassword" required placeholder="Confirmar senha">
+                    </div>
+    
+                    <div class="textbox">
+                        <i class="fas fa-user"></i>
+                        <input type="text" name="cpf" required placeholder="CPF">
+                    </div>
+                    
+                    <div class="textbox">
+                        <i class="fas fa-phone-alt"></i>
+                        <input type="text" name="phone" required placeholder="Telefone">
+                    </div>
+    
+                    <input type="submit" class="button" value="Salvar">
+                </form>
             </div>
         </div>        
     </section>
@@ -134,9 +135,7 @@
         </div>
     </footer>
     
-    <!-- Slider js -->
-    <script src="js/main.js"></script>
-    <!-- Style js -->
-    <script src="js/slider.js"></script>
+    <!-- Main js -->
+    <script src="/js/main.js"></script>
 </body>
 </html>
